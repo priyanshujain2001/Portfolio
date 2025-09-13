@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sensitive files with credentials
+SETUP_INSTRUCTIONS.md
+lib/calendarService.ts
