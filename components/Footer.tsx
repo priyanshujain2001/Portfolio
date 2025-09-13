@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Brain, Code, Heart, Github, Linkedin, Twitter, Mail } from 'lucide-react'
+import { Brain, Code, Heart, Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -15,10 +15,9 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/priyanshu', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/priyanshu', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/priyanshu', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:priyanshu@example.com', label: 'Email' }
+    { icon: Github, href: 'https://github.com/priyanshujain2001', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/priyanshu-jain-2536b6211/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:jainpriyanshu2982001@gmail.com', label: 'Email' }
   ]
 
   return (
