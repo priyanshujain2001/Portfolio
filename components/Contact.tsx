@@ -84,15 +84,33 @@ const Contact = () => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
-    setIsSubmitting(false)
-    
-    // Show success message (you can implement a toast notification here)
-    alert('Message sent successfully!')
+    try {
+      // Send contact form data to API
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to send message')
+      }
+      
+      // Reset form
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      
+      // Show success message
+      alert('Message sent successfully! I\'ll get back to you soon.')
+    } catch (error) {
+      console.error('Error sending message:', error)
+      alert('Failed to send message. Please try again or email me directly.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (

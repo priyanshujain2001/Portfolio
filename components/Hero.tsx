@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import { Brain, Code, Zap, ArrowDown, Sparkles, Cpu } from 'lucide-react'
 
@@ -7,7 +8,7 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-purple-900/20" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900" />
       
       {/* Floating Elements */}
       <motion.div
@@ -70,11 +71,11 @@ const Hero = () => {
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
           I build AI systems that actually work (and sometimes make people laugh 😄).
           <br />
-          <span className="text-primary-400 font-semibold">Machine Learning • Deep Learning • AI Architecture • Chai ☕</span>
+          <span className="text-blue-400 font-semibold">Machine Learning • Deep Learning • AI Architecture • Chai ☕</span>
         </motion.p>
 
         {/* CTA Buttons */}
@@ -115,16 +116,16 @@ const Hero = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto"
         >
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary-400 mb-2">∞</div>
-            <div className="text-gray-400">Cups of Chai Consumed</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">∞</div>
+            <div className="text-gray-300">Cups of Chai Consumed</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-accent-400 mb-2">100%</div>
-            <div className="text-gray-400">Passion for AI</div>
+            <div className="text-3xl font-bold text-purple-400 mb-2">100%</div>
+            <div className="text-gray-300">Passion for AI</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary-400 mb-2">24/7</div>
-            <div className="text-gray-400">Thinking About Code</div>
+            <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
+            <div className="text-gray-300">Thinking About Value</div>
           </div>
         </motion.div>
       </motion.div>
@@ -139,7 +140,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="flex flex-col items-center text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer"
+          className="flex flex-col items-center text-gray-300 hover:text-white transition-colors duration-300 cursor-pointer"
         >
           <span className="text-sm mb-2">Scroll Down</span>
           <ArrowDown className="h-6 w-6" />

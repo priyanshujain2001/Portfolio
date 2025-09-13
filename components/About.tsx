@@ -74,7 +74,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 bg-gray-800/50">
+    <section id="about" className="py-20 bg-slate-900/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
@@ -91,7 +91,7 @@ const About = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
           >
             Hey! I'm Priyanshu, an AI Engineer and Architect from the tech hub of India - Bengaluru! 🇮🇳 
             I'm that person who gets excited about neural networks at 2 AM and thinks about optimization algorithms 
@@ -115,7 +115,7 @@ const About = () => {
             </motion.h3>
             <motion.div
               variants={itemVariants}
-              className="space-y-4 text-gray-300 leading-relaxed"
+              className="space-y-4 text-gray-200 leading-relaxed"
             >
               <p>
                 Started as a curious kid who got excited about JEE Advanced (top 1% of 1.1M candidates! 🎯), 
@@ -144,13 +144,13 @@ const About = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="relative"
           >
-            <div className="relative w-full h-96 bg-gradient-to-br from-primary-500/20 to-accent-500/20 rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-accent-500/10" />
+            <div className="relative w-full h-96 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-2xl overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <Brain className="h-24 w-24 text-primary-400 mx-auto mb-4 animate-pulse-glow" />
+                  <Brain className="h-24 w-24 text-blue-400 mx-auto mb-4 animate-pulse-glow" />
                   <div className="text-2xl font-bold text-white mb-2">AI Engineer</div>
-                  <div className="text-gray-300">Building Tomorrow's Intelligence</div>
+                  <div className="text-gray-200">Building Tomorrow's Intelligence</div>
                 </div>
               </div>
               {/* Floating elements */}
@@ -180,17 +180,17 @@ const About = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="group p-6 bg-gray-800/50 rounded-xl border border-white/10 hover:border-primary-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10"
+                className="group p-6 bg-gray-800/70 rounded-xl border border-white/20 hover:border-blue-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
               >
                 <div className="flex items-center mb-4">
                   <div className="p-3 bg-primary-500/10 rounded-lg group-hover:bg-primary-500/20 transition-colors duration-300">
                     <item.icon className="h-6 w-6 text-primary-400" />
                   </div>
                 </div>
-                <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-primary-400 transition-colors duration-300">
+                <h4 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors duration-300">
                   {item.title}
                 </h4>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -217,7 +217,7 @@ const About = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5 }}
-                className="text-center p-6 bg-gray-800/30 rounded-xl border border-white/5 hover:border-accent-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-accent-500/10"
+                className="text-center p-6 bg-gray-800/50 rounded-xl border border-white/10 hover:border-purple-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/10"
               >
                 <div className="flex justify-center mb-4">
                   <div className="p-3 bg-accent-500/10 rounded-full">
@@ -227,7 +227,7 @@ const About = () => {
                 <h4 className="text-lg font-semibold text-white mb-2">
                   {achievement.title}
                 </h4>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-300 text-sm">
                   {achievement.description}
                 </p>
               </motion.div>
