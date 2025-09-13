@@ -125,7 +125,7 @@ const Hero = () => {
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
-            <div className="text-gray-300">Thinking About Value</div>
+            <div className="text-gray-300">Thinking About Value Creation</div>
           </div>
         </motion.div>
       </motion.div>
