@@ -29,19 +29,19 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Oval Generator",
-      description: "A TypeScript-based tool for generating oval shapes and patterns. Perfect for creating smooth, mathematically precise oval designs for various applications.",
-      technologies: ["TypeScript", "Mathematics", "Geometry", "Canvas API"],
-      category: "Web Development",
+      title: "OVAL Generator",
+      description: "A TypeScript-based tool for generating OVAL (Open Vulnerability Assessment Language) definitions from natural language queries. Converts human-readable vulnerability descriptions into machine-readable OVAL XML for automated security assessments.",
+      technologies: ["TypeScript", "OVAL", "Natural Language Processing", "XML", "Cybersecurity"],
+      category: "Cybersecurity",
       icon: BarChart3,
       gradient: "from-blue-500 to-purple-600",
       features: [
-        "Mathematical precision",
-        "TypeScript implementation",
-        "Canvas-based rendering",
-        "Customizable parameters"
+        "Natural language to OVAL conversion",
+        "Vulnerability assessment automation",
+        "XML generation",
+        "Security compliance checking"
       ],
-      impact: "Because sometimes you need the perfect oval, not just any old circle! ⭕"
+      impact: "Making vulnerability assessment accessible through natural language! 🔒"
     },
     {
       title: "Ephemeral Streaming Platform",
