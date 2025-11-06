@@ -56,6 +56,12 @@
   color: white;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Custom animations */
 @keyframes pulse-glow {
   0%, 100% {

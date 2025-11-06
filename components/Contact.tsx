@@ -2,9 +2,14 @@
 
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send, MessageCircle, Zap } from 'lucide-react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const Contact = () => {
+
+type ContactProps = {
+  prefilledSubject?: string
+}
+
+const Contact = ({ prefilledSubject = "" }: ContactProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,6 +18,11 @@ const Contact = () => {
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
+  useEffect(() => {
+    if (prefilledSubject) {
+      setFormData((prev) => ({ ...prev, subject: prefilledSubject }))
+    }
+  }, [prefilledSubject])
 
   const containerVariants = {
     hidden: { opacity: 0 },

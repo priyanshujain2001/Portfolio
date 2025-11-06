@@ -13,7 +13,8 @@ import Skills from '@/components/Skills'
 import CalendarBooking from '@/components/CalendarBooking'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
-
+import StartupIdeas from '@/components/StartUpIdeas'
+import CreativeJourney from '@/components/CreativeJourney'
 export default function Home() {
   useEffect(() => {
     // Add smooth scrolling behavior
@@ -50,13 +51,16 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
+      <StartupIdeas />
       <CaseStudies />
       {/* <Testimonials /> */}
       {/* <Services /> */}
       <LinkedInRedirect />
+      
       <Skills />
       <CalendarBooking />
       <Contact />
+      <CreativeJourney/>
       <Footer />
     </main>
   )
